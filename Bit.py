@@ -150,6 +150,27 @@ def main():
             print('Exiting Math+ Calculator')
             time.sleep(.5)
             main()
+#UserInterface
+    if command == 'Enter userInterface' or command == 'Open settings':
+        userInterfaceCode = input('Please enter the userInterface Passcode: ')
+        if userInterfaceCode == 'bit_version_01':
+            print('User Interface Settings:')
+            time.sleep(1)
+            print('Return: R')
+            print('Restart Bit: 1')
+            userInterfaceChooser = input("")
+            if userInterfaceChooser == 'R':
+                print('Returning to Home.')
+                time.sleep(1)
+                main()
+                else:
+                    print('Returning to Home.')
+                    time.sleep(1)
+                    main()
+        else:
+            print('Incorrect passcode entered. Sending back to home.')
+            time.sleep(1)
+            main()
 #Introduction
 print("Hello! My name is Bit, your virtual friend and companion.")
 name = input("It doesnt seem like we have met before. What is your name?: ")

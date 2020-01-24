@@ -1,6 +1,7 @@
 """
 Rylan Mnier
 AI: Bit
+Format: Text Based 
 Started on: Janurary 22nd, 2020
 """
 
@@ -23,13 +24,132 @@ def main():
             print(x)
             time.sleep(3)
             main()
+        if feeling == 'bad' or feeling == 'not very good' or feeling == 'could of gone better' or feeling == 'terrible':
+            lllg=['Im sorry to hear that. Tommrow is always a better day','Im sorry, I hope it gets better.','I wish I could make it better but im afraid that I dont know how to do that.']
+            x=random.choice(lllg)
+            print(x)
+            time.sleep(3)
+            main()
     if command == 'What time is it?' or command == 'What is the time?' or command == 'What is the hour?' or command == 'How many minutes have passed today?':
         now = datetime.now()
         currentHour = now.hour
         currentMin = now.minute
         print('The time is ', currentHour, ':', currentMin)
+        time.sleep(3)
         main()
-   
+    if command == 'What is todays date?' or command == 'Tell me the date' or command == 'What day is it?' or command == 'What year is it?' or command == 'What is the date?':
+        now = datetime.now()
+        currentDay = now.day
+        currentMonth = now.month
+        currentYear = now.year
+        print('The date is', currentMonth, currentDay,',',currentYear)
+        time.sleep(3)
+        main()
+    if command == 'Hello!' or command == 'hello' or command == 'hi' or command == 'howdy' or command == 'greetings':
+        greeting=['Hello!','Hi!','Howdy!','Hola!','Greetings to you too!']
+        x=random.choice(greeting)
+        print(x)
+        time.sleep(3)
+        main()
+    if command == 'Do a math problem' or command == 'Answer a math question' or command == 'math':
+        print("Entering Math+ Calculator!")
+        time.sleep(2)
+        print('Addition Problem: 1')
+        print('Subtraction Problem: 2')
+        print('Multiplication Problem: 3')
+        print('Division Problem: 4')
+        print('Exponents: 5')
+        print('Perfect Squares: 6')
+        print('Square Root: 7')
+        time.sleep(1)
+        mathCommand = input("What would you like me to do today?: ")
+        if mathCommand == '1':
+            print("Enter your first number below:")
+            firstMathNumber = eval(input(""))
+            print("Enter the second number below:")
+            secondMathNumber = eval(input(""))
+            print('Calculating...')
+            time.sleep(1)
+            print(firstMathNumber,"+",secondMathNumber,'=')
+            print(firstMathNumber+secondMathNumber)
+            time.sleep(3)
+            print('Exiting Math+ Calculator')
+            time.sleep(.5)
+            main()
+        if mathCommand == '2':
+            print("Enter your first number below:")
+            firstMathNumber = eval(input(""))
+            print("Enter the second number below:")
+            secondMathNumber = eval(input(""))
+            print('Calculating...')
+            time.sleep(1)
+            print(firstMathNumber,"-",secondMathNumber,'=')
+            print(firstMathNumber-secondMathNumber)
+            time.sleep(3)
+            print('Exiting Math+ Calculator')
+            time.sleep(.5)
+            main()
+        if mathCommand == '3':
+            print("Enter your first number below:")
+            firstMathNumber = eval(input(""))
+            print("Enter the second number below:")
+            secondMathNumber = eval(input(""))
+            print('Calculating...')
+            time.sleep(1)
+            print(firstMathNumber,"*",secondMathNumber,'=')
+            print(firstMathNumber*secondMathNumber)
+            time.sleep(3)
+            print('Exiting Math+ Calculator')
+            time.sleep(.5)
+            main()
+        if mathCommand == '4':
+            print("Enter your first number below:")
+            firstMathNumber = eval(input(""))
+            print("Enter the second number below:")
+            secondMathNumber = eval(input(""))
+            print('Calculating...')
+            time.sleep(1)
+            print(firstMathNumber,"/",secondMathNumber,'=')
+            print(firstMathNumber/secondMathNumber)
+            time.sleep(3)
+            print('Exiting Math+ Calculator')
+            time.sleep(.5)
+            main()
+        if mathCommand == '5':
+            print("Enter your first number below:")
+            firstMathNumber = eval(input(""))
+            print("Enter the second number below:")
+            secondMathNumber = eval(input(""))
+            print('Calculating...')
+            time.sleep(1)
+            print(firstMathNumber,"**",secondMathNumber,'=')
+            print(firstMathNumber**secondMathNumber)
+            time.sleep(3)
+            print('Exiting Math+ Calculator')
+            time.sleep(.5)
+            main()
+        if mathCommand == '6':
+            print("Enter your Perfect Square below:")
+            firstMathNumber = eval(input(""))
+            print('Calculating...')
+            time.sleep(1)
+            print(firstMathNumber,"²",'=')
+            print(firstMathNumber**2)
+            time.sleep(3)
+            print('Exiting Math+ Calculator')
+            time.sleep(.5)
+            main()
+        if mathCommand == '7':
+            print("Enter your Square Root below:")
+            firstMathNumber = eval(input(""))
+            print('Calculating...')
+            time.sleep(1)
+            print('√',firstMathNumber,'=')
+            print(firstMathNumber**0.5)
+            time.sleep(3)
+            print('Exiting Math+ Calculator')
+            time.sleep(.5)
+            main()
 #Introduction
 print("Hello! My name is Bit, your virtual friend and companion.")
 name = input("It doesnt seem like we have met before. What is your name?: ")

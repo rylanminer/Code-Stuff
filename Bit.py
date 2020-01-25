@@ -18,7 +18,7 @@ def main():
         print(x)
         time.sleep(2);
         feeling = input('How are you feeling today?: ')
-        if feeling == 'good' or feeling == 'well' or feeling == 'ok' or feeling == 'amazing':
+        if feeling == 'good' or feeling == 'well' or feeling == 'ok' or feeling == 'amazing' or feeling == 'Im feeling good':
             long=['Im glad to hear that! Hopefully it stays like that','Yay! That makes me happy.','YASSSSSSSSSSSS QUEEEEEEEEEEEEEEEN!!!!!!!!!!']
             x=random.choice(long)
             print(x)
@@ -163,10 +163,10 @@ def main():
                 print('Returning to Home.')
                 time.sleep(1)
                 main()
-                else:
-                    print('Returning to Home.')
-                    time.sleep(1)
-                    main()
+            else:
+                print('Returning to Home.')
+                time.sleep(1)
+                main()
         else:
             print('Incorrect passcode entered. Sending back to home.')
             time.sleep(1)

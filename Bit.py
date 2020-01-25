@@ -3,12 +3,12 @@ Rylan Mnier
 AI: Bit
 Format: Text Based 
 Started on: Janurary 22nd, 2020
-Started on IDLE moving to Visual Studio
+Started on IDLE moving to Visual Studio.
 """
 
 #Imports
 import time
-from datetime import datetime
+from datetime import datetime 
 import random
 #Command List
 def main():

@@ -3,6 +3,7 @@ Rylan Mnier
 AI: Bit
 Format: Text Based 
 Started on: Janurary 22nd, 2020
+Started on IDLE moving to Visual Studio
 """
 
 #Imports
